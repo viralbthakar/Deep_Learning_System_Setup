@@ -90,5 +90,23 @@ sudo cp */libcudnn* /usr/local/cuda/lib64/
 sudo chmod a+r /usr/local/cuda/lib64/libcudnn*
 ```
 
+## Step - 5 : Install Anaconda Python and Create Conda Environment
+
+* Next step is to install [Anaconda Python](https://www.anaconda.com/download/). We will be downloading Python 3.6 version of Anaconda Python. 
+
+After the Installation completes Downloading a .sh file for Ubuntu use following command to install Anaconda. 
+
+```
+bash ~/Downloads/Anaconda3-5.0.1-Linux-x86_64.sh
+```
+
+## Step - 6 : Create Conda Environment with Specific Packages
+* Next we will create Conda Environment using specific packages we want. 
+
+To do that download the setup.yml file and use the following command to create the new environment. 
+
+```
+conda env create -f environment-gpu.yml
+```
 
 
