@@ -109,4 +109,19 @@ To do that download the setup.yml file and use the following command to create t
 conda env create -f setup.yml
 ```
 
+## Step - 7 : Install OpenBlas
+
+OpenBLAS is a linear algebra library and is faster than Atlas. This step is optional, but note that some of the following steps assume that OpenBLAS is installed. You'll need to install gfortran to compile it.
+
+```
+mkdir ~/git
+cd ~/git
+git clone https://github.com/xianyi/OpenBLAS.git
+cd OpenBLAS
+make FC=gfortran -j $(($(nproc) + 1))
+sudo make PREFIX=/usr/local install
+
+echo 'export LD_LIBRARY_PATH=/usr/local/lib:$LD_LIBRARY_PATH' >> ~/.bashrc
+```
+
 
