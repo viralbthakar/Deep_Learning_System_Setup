@@ -106,7 +106,7 @@ bash ~/Downloads/Anaconda3-5.0.1-Linux-x86_64.sh
 To do that download the setup.yml file and use the following command to create the new environment. 
 
 ```
-conda env create -f environment-gpu.yml
+conda env create -f setup.yml
 ```
 
 
