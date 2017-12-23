@@ -11,8 +11,8 @@ NVIDIA GTX 1060
 sudo apt-get update
 sudo apt-get upgrade  
 sudo apt-get install build-essential cmake g++ gfortran 
-sudo apt-get git pkg-config python-dev 
-sudo apt-get software-properties-common wget
+sudo apt-get install git pkg-config python-dev 
+sudo apt-get install software-properties-common wget
 sudo apt-get autoremove 
 sudo rm -rf /var/lib/apt/lists/*
 ```
